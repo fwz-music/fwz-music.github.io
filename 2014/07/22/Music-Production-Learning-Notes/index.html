@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="utf-8">
+    
+    <title>Music Production Learning Notes | Music Diary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="This is a very very long article on Logic Pro learning, based on The “Music Production” course on Coursera. Six sections will be included as listed:  Connector and Cables Basic Editing in Logic Pro X">
+<meta name="keywords" content="Music Production,Coursera,Logic Pro">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Music Production Learning Notes">
+<meta property="og:url" content="http://musicdiary.me/2014/07/22/Music-Production-Learning-Notes/index.html">
+<meta property="og:site_name" content="Music Diary">
+<meta property="og:description" content="This is a very very long article on Logic Pro learning, based on The “Music Production” course on Coursera. Six sections will be included as listed:  Connector and Cables Basic Editing in Logic Pro X">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://wenzhong.qiniudn.com/img/week5_project_overview.png">
+<meta property="og:image" content="http://upload.wikimedia.org/wikipedia/commons/2/27/Photo-audiojacks.jpg">
+<meta property="og:image" content="http://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Xlr-connectors.jpg/220px-Xlr-connectors.jpg">
+<meta property="og:image" content="http://upload.wikimedia.org/wikipedia/commons/8/81/XLR_pinouts.svg">
+<meta property="og:image" content="http://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Composite-cables.jpg/640px-Composite-cables.jpg">
+<meta property="og:image" content="http://wenzhong.qiniudn.com/img/blog/music_production_before_split.png">
+<meta property="og:image" content="http://wenzhong.qiniudn.com/img/blog/music_production_after_split.png">
+<meta property="og:image" content="http://wenzhong.qiniudn.com/img/blog/music_production_fade_tool.png">
+<meta property="og:image" content="http://wenzhong.qiniudn.com/img/blog/music_production_crossfade.png">
+<meta property="og:image" content="http://wenzhong.qiniudn.com/img/blog/music_production_convert.png">
+<meta property="og:image" content="http://wenzhong.qiniudn.com/img/blog/music_production_cycle.png">
+<meta property="og:image" content="http://wenzhong.qiniudn.com/img/blog/music_production_track_color.png">
+<meta property="og:image" content="http://wenzhong.qiniudn.com/img/blog/music_production_region_color.png">
+<meta property="og:image" content="http://wenzhong.qiniudn.com/img/blog/automation_1.png">
+<meta property="og:image" content="http://wenzhong.qiniudn.com/img/blog/automation_2.png">
+<meta property="og:image" content="http://wenzhong.qiniudn.com/img/blog/automation_3.png">
+<meta property="og:image" content="http://wenzhong.qiniudn.com/img/blog/automation_4.png">
+<meta property="og:image" content="http://wenzhong.qiniudn.com/img/blog/automation_6.png">
+<meta property="og:image" content="http://wenzhong.qiniudn.com/img/blog/automation_5.png">
+<meta property="og:image" content="http://help.apple.com/mainstage/mac/2.2/en/mainstage/logicproeffects/Art/S00/S0038_Compressor.png">
+<meta property="og:image" content="http://wenzhong.qiniudn.com/img/week5_project_overview.png">
+<meta property="og:image" content="http://wenzhong.qiniudn.com/img/blog/week5_EQ_panel.png">
+<meta property="og:image" content="http://wenzhong.qiniudn.com/img/blog/week5_post_eq.png">
+<meta property="og:image" content="http://wenzhong.qiniudn.com/img/blog/save_as_new_settings.png">
+<meta property="og:updated_time" content="2018-09-02T07:35:40.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Music Production Learning Notes">
+<meta name="twitter:description" content="This is a very very long article on Logic Pro learning, based on The “Music Production” course on Coursera. Six sections will be included as listed:  Connector and Cables Basic Editing in Logic Pro X">
+<meta name="twitter:image" content="http://wenzhong.qiniudn.com/img/week5_project_overview.png">
+    
+
+    
+        <link rel="alternate" href="/" title="Music Diary" type="application/atom+xml" />
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome5/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/libs/font-awesome5/css/fa-brands.min.css">
+    <link rel="stylesheet" href="/libs/font-awesome5/css/fa-solid.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">Music Diary</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">Home</a>
+                
+                    <a class="main-nav-link" href="/archives">Archives</a>
+                
+                    <a class="main-nav-link" href="/categories">Categories</a>
+                
+                    <a class="main-nav-link" href="/tags">Tags</a>
+                
+                    <a class="main-nav-link" href="/about">About</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/css/images/avatar.png" />
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fas fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">Home</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">Archives</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">Categories</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">Tags</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">About</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile" class="profile-fixed">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/css/images/avatar.png" />
+            <h2 id="name">Wenzhong &amp; Shanyi</h2>
+            <h3 id="title">Music Rookie Couple</h3>
+            <span id="location"><i class="fas fa-map-marker-alt" style="padding-right: 5px"></i>Beijing, China</span>
+            <a id="follow" target="_blank" href="https://github.com/fwz">FOLLOW</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                6
+                <span>posts</span>
+            </div>
+            <div class="article-info-block">
+                7
+                <span>tags</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="http://github.com/fwz" target="_blank" title="github" class=tooltip>
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="twitter" class=tooltip>
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="facebook" class=tooltip>
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="dribbble" class=tooltip>
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="rss" class=tooltip>
+                            <i class="fab fa-rss"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><article id="post-Music-Production-Learning-Notes" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            Music Production Learning Notes
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fas fa-calendar-alt"></i>
+        <a href="/2014/07/22/Music-Production-Learning-Notes/">
+            <time datetime="2014-07-22T11:18:54.000Z" itemprop="datePublished">2014-07-22</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fas fa-folder"></i>
+        <a class="article-category-link" href="/categories/Music/">Music</a><i class="fas fa-angle-right"></i><a class="article-category-link" href="/categories/Music/Music-Production/">Music Production</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/Coursera/">Coursera</a>, <a class="tag-link" href="/tags/Logic-Pro/">Logic Pro</a>, <a class="tag-link" href="/tags/Music-Production/">Music Production</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p><img src="http://wenzhong.qiniudn.com/img/week5_project_overview.png" alt=""></p>
+<p>This is a very very long article on Logic Pro learning, based on The “Music Production” course on Coursera. Six sections will be included as listed:</p>
+<ul>
+<li>Connector and Cables</li>
+<li>Basic Editing in Logic Pro X</li>
+<li>Automation in Logic Pro X</li>
+<li>Dynamic Processors</li>
+<li>Configurating EQ</li>
+<li>Understanding Synthesizer</li>
+</ul>
+<h2 id="Chapter-1-Connector-and-Cables"><a href="#Chapter-1-Connector-and-Cables" class="headerlink" title="Chapter 1: Connector and Cables"></a>Chapter 1: Connector and Cables</h2><p>Be aware of the importance about cables and connectors because quality of cables could prevent us from getting noisy voice. many sound malfunction are caused by broken connectors or cables.</p>
+<a id="more"></a>
+<h3 id="TS-cable"><a href="#TS-cable" class="headerlink" title="TS cable"></a>TS cable</h3><p>It’s also known as “instrument cable”. But what’s TS?</p>
+<p>The connector of the TS cable is cylindrical in shape, typically with two, three or four contacts. Three-contact versions are known as TRS connectors, where T stands for “tip”, R stands for “ring” and S stands for “sleeve”. Similarly, two and four-contact versions are called TS and TRRS connectors respectively.</p>
+<p>The connector was invented for use in telephone switchboards in the 19th century and is still widely used. In its original configuration, the outside diameter of the “sleeve” conductor is 1⁄4 inch (exactly 6.35 mm). The “mini” connector has a diameter of 3.5 mm (approx. 1⁄8 inch) and the “sub-mini” connector has a diameter of 2.5 mm (approx. 3⁄32 inch).<br><img src="http://upload.wikimedia.org/wikipedia/commons/2/27/Photo-audiojacks.jpg" alt="connectors in different size"></p>
+<p>Common usage example: connect gears to amplifier or DI.</p>
+<h3 id="XLR-cable"><a href="#XLR-cable" class="headerlink" title="XLR cable"></a>XLR cable</h3><p>XLR cable is a standard Microphone cables. And it’s also a balanced cable.</p>
+<p><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Xlr-connectors.jpg/220px-Xlr-connectors.jpg" alt="XLR connectors"></p>
+<p>The XLR connector is a style of electrical connector, primarily found on professional audio, video, and stage lighting equipment. The connectors are circular in design and have between 3 and 7 pins. They are most commonly associated with balanced audio interconnection.</p>
+<p><img src="http://upload.wikimedia.org/wikipedia/commons/8/81/XLR_pinouts.svg" alt="XLR connector pins"></p>
+<p>The following tables show usage of each pin.</p>
+<table>
+<thead>
+<tr>
+<th><em> Pin </em></th>
+<th><em> Function </em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Chassis ground (cable shield)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Positive polarity terminal for balanced audio circuits (aka “hot”)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Negative polarity terminal for balanced circuits (aka “cold”)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="RCA-cable"><a href="#RCA-cable" class="headerlink" title="RCA cable"></a>RCA cable</h3><p><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Composite-cables.jpg/640px-Composite-cables.jpg" alt="RCA cable"></p>
+<p>RCA cable is initially designed for composite video (yellow) and stereo audio (white and red). In music production, they are mainly used to connect consumer grade appliances.</p>
+<p>The name “RCA” derives from the Radio Corporation of America, which introduced the design by the early 1940s for internal connection of the pickup to the chassis in home radio-phonograph consoles.</p>
+<h3 id="Balanced-Unbalanced-cable"><a href="#Balanced-Unbalanced-cable" class="headerlink" title="Balanced / Unbalanced cable"></a>Balanced / Unbalanced cable</h3><p>We talk about balance and unbalance in above sections. In telecommunications and professional audio, a balanced line or balanced signal pair is a transmission line consisting of two conductors of the same type, each of which have equal impedances along their lengths and equal impedances to ground and to other circuits. The chief advantage of the balanced line format is good rejection of external noise when fed to a differential amplifier.</p>
+<h3 id="Chapter-1-Reflection"><a href="#Chapter-1-Reflection" class="headerlink" title="Chapter 1: Reflection"></a>Chapter 1: Reflection</h3><p>We talk about TS cable, which connect gears to amplifier or DI; XLR cable, which mainly connect microphone; RCA cables, which connect consumer grade appliance. And we also talk about balanced cable and it’s advantage of rejecting noices.</p>
+<p>It’s interesting to know more detail about cables, since our instructor Prof. Loudon emphasise connector and cables are important and I also have similar experiences when playing with my gears. Beside reviewing some knowledge in class material, I also find something interesting stuffs such as pin function.</p>
+<p>Finally, thank you for reading this post and I will be really appreciate if you could post your feedback and help me improve!</p>
+<h3 id="References"><a href="#References" class="headerlink" title="References"></a>References</h3><p><a href="http://en.wikipedia.org/wiki/Balanced" target="_blank" rel="noopener">Balanced cable</a> <a href="http://en.wikipedia.org/wiki/Balanced" target="_blank" rel="noopener">http://en.wikipedia.org/wiki/Balanced</a><br><a href="http://en.wikipedia.org/wiki/Xlr_cable" target="_blank" rel="noopener">XLR connector</a> <a href="http://en.wikipedia.org/wiki/Xlr_cable" target="_blank" rel="noopener">http://en.wikipedia.org/wiki/Xlr_cable</a><br><a href="http://en.wikipedia.org/wiki/Rca_cable" target="_blank" rel="noopener">RCA cables</a> <a href="http://en.wikipedia.org/wiki/Rca_cable" target="_blank" rel="noopener">http://en.wikipedia.org/wiki/Rca_cable</a></p>
+<hr>
+<h2 id="Chapter-2-Basic-Editing-in-Logic-Pro-X"><a href="#Chapter-2-Basic-Editing-in-Logic-Pro-X" class="headerlink" title="Chapter 2: Basic Editing in Logic Pro X"></a>Chapter 2: Basic Editing in Logic Pro X</h2><p>This section will cover how to perform important editing tasks in your DAW including: trim, separate, crossfade, merge, grid, cycle, markers, zoom, name and color.</p>
+<p>My DAW is Logic Pro X. Maybe you are using a different DAW, but I believe operation would be similar (or, to some extent) for other DAW. Before starting this lesson, I would like to express my favour to using shortcut keys. They could greatly improve efficiency. And I wish you could feel its power during this lesson.</p>
+<h3 id="Trimming"><a href="#Trimming" class="headerlink" title="Trimming"></a>Trimming</h3><p>There’s no Trim shortcut keys. Here is how we do a basic triming by mouse.</p>
+<ul>
+<li>Select a single region</li>
+<li>Move the mouse to the edge of the region</li>
+<li>Drag mouse to trim</li>
+<li>Note if you are going to the up-right corner of the last region of a track, you will create a loop of this region</li>
+</ul>
+<h3 id="Separate-Split"><a href="#Separate-Split" class="headerlink" title="Separate (Split)"></a>Separate (Split)</h3><p>In Logic Pro, “Separate” is called “Split”. Here is how we do a basic spliting.</p>
+<ul>
+<li>Select a single region</li>
+<li>move the playhead to the place we like to split</li>
+<li>split region by <code>⌘T</code></li>
+</ul>
+<p><img src="http://wenzhong.qiniudn.com/img/blog/music_production_before_split.png" alt="Before Split"><br><img src="http://wenzhong.qiniudn.com/img/blog/music_production_after_split.png" alt="After Split"></p>
+<h3 id="Crossfade"><a href="#Crossfade" class="headerlink" title="Crossfade"></a>Crossfade</h3><p>This is going to show how to create crossfade for 2 adjacent blocks.</p>
+<ul>
+<li>Show the “Edit” View by <code>E</code></li>
+<li>Select the “Fade tool” (only available by mouse) in the “left click tool”</li>
+<li>Drag an region between the two tracks to create crossfade</li>
+<li>Manipulate the crossfade curves to get preferable effects</li>
+</ul>
+<p><img src="http://wenzhong.qiniudn.com/img/blog/music_production_fade_tool.png" alt="Select fade tool"><br><img src="http://wenzhong.qiniudn.com/img/blog/music_production_crossfade.png" alt="Crossfade"></p>
+<h3 id="Merge"><a href="#Merge" class="headerlink" title="Merge"></a>Merge</h3><p>In Logic Pro, one kind of “Merge” are called “Convert to File”</p>
+<ul>
+<li>Select multiple regions by pressing <code>⇧</code>(Shift)</li>
+<li>convert selected region by <code>⌥⌘F</code></li>
+</ul>
+<p><img src="http://wenzhong.qiniudn.com/img/blog/music_production_convert.png" alt="Convert to file"></p>
+<h3 id="Grid"><a href="#Grid" class="headerlink" title="Grid"></a>Grid</h3><ul>
+<li>Show/Hide Grid lines by <code>⌃G</code></li>
+<li>Slightly move region by dragging region with mouse and holding <code>⌃</code></li>
+</ul>
+<h3 id="Cycle"><a href="#Cycle" class="headerlink" title="Cycle"></a>Cycle</h3><p>Here’s how we do to repeatly playing a region.</p>
+<ul>
+<li>Press <code>C</code> to switch “Cycle” Mode</li>
+<li>Then goto the top of the track, create a cycle region (yellow region in the screenshot) by dragging mouse</li>
+<li>Cycle region is also control by Grid, so we could pressing <code>⌃</code> to adjust cycle region length.<br><img src="http://wenzhong.qiniudn.com/img/blog/music_production_cycle.png" alt="Cycle"></li>
+</ul>
+<p>Then we could place the playhead to in the middle of the region and hit <code>space</code> to play this region repeatly and to optimize it.</p>
+<h3 id="Zoom"><a href="#Zoom" class="headerlink" title="Zoom"></a>Zoom</h3><p>There is 2 types of Zoom in Logic Pro – Horizontal and Vertical. Here’s the basic zooming techniques.</p>
+<ul>
+<li>As our instrutor said, select the track before zooming</li>
+<li>Horizonal Zoom in / out by <code>⌘ ← / →</code></li>
+<li>Vertical Zoom in / out by <code>⌘ ↑ / ↓</code></li>
+<li>After zooming, the playhead will remain the same position on the screen if possible.</li>
+</ul>
+<h3 id="Name-and-Color"><a href="#Name-and-Color" class="headerlink" title="Name and Color"></a>Name and Color</h3><p>Naming / coloring a track is good habit. Especially if a pattern is formed, good naming could help you better manage the music project, and coloring could help you identify tracks visually.</p>
+<ul>
+<li>Name the track by double click the track name</li>
+<li>Color the track by goto the track number, popup menu by right click, then click “Assgin Track Color”</li>
+<li>Name / Color Region by track by <code>⇧⌥N</code> / <code>⇧⌥C</code></li>
+<li>Show / Hide color palette by <code>⌥ C</code></li>
+</ul>
+<p><img src="http://wenzhong.qiniudn.com/img/blog/music_production_track_color.png" alt="color the track"><br><img src="http://wenzhong.qiniudn.com/img/blog/music_production_region_color.png" alt="color the region"></p>
+<h3 id="Other-tips"><a href="#Other-tips" class="headerlink" title="Other tips"></a>Other tips</h3><ul>
+<li>Navigating by keyboard will also greatly improve efficiency.<ul>
+<li>use <code>/{number}</code> to navigate to No.{number} bar</li>
+</ul>
+</li>
+<li>Hit <code>Space</code> to start or pause playing</li>
+<li>Final weapon for key command: <a href="http://www.logicprokeycommands.com/logic-pro-x-key-commands/" target="_blank" rel="noopener">Logic Pro X key commands</a>. I highly encourage people go there and search any term they are interested in. There is always surprice to encounter useful features.</li>
+</ul>
+<h3 id="Chapter-2-Reflection"><a href="#Chapter-2-Reflection" class="headerlink" title="Chapter 2 Reflection"></a>Chapter 2 Reflection</h3><p>We introduced some important editing approach in this lesson, most of them could be handled by using keyboard shortcut. Maybe occupational disease for a programmer, I really feel keyboard is my best friend :). Wish this help.</p>
+<p>Finally, thank you for reading this post and I will be really appreciate if you could post your feedback and help me improve!</p>
+<hr>
+<h2 id="Chapter-3-Automation-in-Logic-Pro-X"><a href="#Chapter-3-Automation-in-Logic-Pro-X" class="headerlink" title="Chapter 3: Automation in Logic Pro X"></a>Chapter 3: Automation in Logic Pro X</h2><h3 id="Recording-automation"><a href="#Recording-automation" class="headerlink" title="Recording automation"></a>Recording automation</h3><ul>
+<li>First, select a track for adding automation. (In our case, track <em>LEAD VOX_02</em>)<br><img src="http://wenzhong.qiniudn.com/img/blog/automation_1.png" alt="select track"></li>
+<li>Press <em><code>A</code></em> to enable automation view. we can see the automation icon become yellow.<br><img src="http://wenzhong.qiniudn.com/img/blog/automation_2.png" alt="select track"></li>
+<li>Then select type of automation, (In our case, Volume,) And add control point by double click<br><img src="http://wenzhong.qiniudn.com/img/blog/automation_3.png" alt="select track"></li>
+</ul>
+<h3 id="Editing-automation"><a href="#Editing-automation" class="headerlink" title="Editing automation"></a>Editing automation</h3><ul>
+<li>We can also add other type of automation (such as Pan) and all automation in a track will be applied to the track.<br><img src="http://wenzhong.qiniudn.com/img/blog/automation_4.png" alt="select track"></li>
+<li>Double click to add/remove automation control point</li>
+<li>We could use pencil tools to draw the automation by hand<br><img src="http://wenzhong.qiniudn.com/img/blog/automation_6.png" alt="select track"></li>
+<li>We could also use erase tools to remove a series of control points.</li>
+<li>Finally, if we turn on the automation display, we could visualize all automation effects on the original tracks. In the screenshot, I set it to Volume, but you could still see the green pan automation line (Notice the background of the original track).<br><img src="http://wenzhong.qiniudn.com/img/blog/automation_5.png" alt="select track"></li>
+</ul>
+<h3 id="Chapter-3-Reflection"><a href="#Chapter-3-Reflection" class="headerlink" title="Chapter 3 Reflection"></a>Chapter 3 Reflection</h3><p>The ability of changing plugin parameters over time make automation a must have skill in musical production. </p>
+<hr>
+<h3 id="Chapter-4-Dynamic-Processor"><a href="#Chapter-4-Dynamic-Processor" class="headerlink" title="Chapter 4: Dynamic Processor"></a>Chapter 4: Dynamic Processor</h3><p><img src="http://help.apple.com/mainstage/mac/2.2/en/mainstage/logicproeffects/Art/S00/S0038_Compressor.png" alt="Dynamic Processor"></p>
+<p>In the following lesson, I will describe the concept behind dynamic processors and look at the four basic parameter settings related to them.</p>
+<h2 id="Dynamic-Processors"><a href="#Dynamic-Processors" class="headerlink" title="Dynamic Processors"></a>Dynamic Processors</h2><p>Dynamic Processors are post-production effects designed to manipulate the dynamic range of a piece of audio. That is, they affect how many decibels there are between the quietest and loudest levels of the output.</p>
+<p>Dynamic Processors can either:</p>
+<ul>
+<li>reduce dynamic range through COMPRESSION, or</li>
+<li>increase dynamic range through EXPANSION</li>
+</ul>
+<h3 id="Compression-and-Expansion"><a href="#Compression-and-Expansion" class="headerlink" title="Compression and Expansion"></a>Compression and Expansion</h3><p>To compress (reduce) the dynamic range of a piece of audio, you can either increase the levels of the quiet parts to make them louder or decrease the levels of the loud parts to make them quieter.<br>Compressors and limiters fall under this category.</p>
+<p>While either method can effectively decrease the dynamic range, a compressor or limiter usually brings down the levels above a certain threshold rather than brings up the levels of the quiet parts. This is called <strong>DOWNWARD COMPRESSION</strong> and is usually what people are referring to when they talk about “compressors.”</p>
+<p>To expand the dynamic range of a piece of audio, you can either decrease the levels of the quiet parts to make them quieter or increase the levels of the loud parts to make them louder.<br>Expanders and noise gates fall under this category.</p>
+<p>Expanders and noise gates usually used to decrease quiet levels. In the case of gates, quiet levels (those that fall below the threshold) are in effect reduced to signal off.</p>
+<h3 id="Parameters-of-Dynamic-Processor"><a href="#Parameters-of-Dynamic-Processor" class="headerlink" title="Parameters of Dynamic Processor"></a>Parameters of Dynamic Processor</h3><h4 id="Threshold"><a href="#Threshold" class="headerlink" title="Threshold"></a>Threshold</h4><p>Threshold refers to the level where the dynamic processor starts to function. If audio crosses over this dB value, the other parameters kick into effect.</p>
+<p>Above this dB value in a compressor/limiter, the sound is processed (below it, the signal passes through unchanged.)<br>Below this dB value in an expander/noise gate the sound is processed (above it, the sound passes through unchanged.)<br>In other words, a compressor/limiter lowers the volume of a signal when it gets too loud, and an expander/gate lowers the volume of a signal when it gets too quiet.</p>
+<h4 id="Ratio"><a href="#Ratio" class="headerlink" title="Ratio"></a>Ratio</h4><p>Ratio refers to how much the level is affected once it has crossed the threshold, expressed as INPUT:OUTPUT. The higher the ratio, the more extreme the dynamic processing.</p>
+<p>1:1 — for a signal level 1 dB past the threshold, 1dB will be outputted. In other words, nothing changes.<br>4:1 — for a signal level 4 dB past the threshold, 1dB will be outputted. The output will be one quarter of what goes in. In the case of a compressor, this ratio is considered to be heavy compression.<br>10:1 — for a signal level 10 dB past the threshold, 1dB will be outputted. In the case of expansion, this ratio or higher is considered to be a noise gate. In the case of compression, this ratio or higher is considered to be a limiter.<br>30:1 — for a signal level 30 dB past the threshold, 1dB will be outputted. This essentially stops the sound. In the case of compression, this ratio along with low attack and release times is considered to be a BRICK WALL LIMITER.</p>
+<h4 id="Attack"><a href="#Attack" class="headerlink" title="Attack"></a>Attack</h4><p>Attack refers to how quickly the volume fader kicks in once the signal has crossed the threshold.</p>
+<p>This is expressed in milliseconds. The lower the rate, the faster the fader will move.<br>The attack rate controls how much of the transient will be allowed through unaffected by the processor. The <em>transient</em> is the part of a sound where the amplitude changes a lot in a small amount of time, for example at the head of a drum hit.</p>
+<h4 id="Release"><a href="#Release" class="headerlink" title="Release"></a>Release</h4><p>Release refers to how quickly the volume fader returns to normal once the signal has crossed back from the threshold.</p>
+<p>This is expressed in milliseconds [ms]. The lower the rate, the faster the fader will move.</p>
+<p>The ATTACK and RELEASE values are set according to the type of sound and the desired impact. If the source swells in, a longer attack and release could be a good choice. If it the sound itself is “punchy”, a low attack and release could work well. A shorter attack also gives the sound punchiness, whereas a longer attack softens the sound.</p>
+<p>In compression a fast attack can stop the transient coming through, but it can also soften the character of the sound somewhat. A longer attack time allows more of the transient through but means there could be a larger volume peak. On the other hand, a noise gate is usually set with a low attack so that the transient comes through, otherwise the sound would swell in.<br>If the release time is too long, it can result in a “pumping” sound because the processor hasn’t released before the next input comes in.</p>
+<h3 id="Chapter-4-Reflection"><a href="#Chapter-4-Reflection" class="headerlink" title="Chapter 4 Reflection"></a>Chapter 4 Reflection</h3><p>The ability of dynamic range make it a very powerful tools because it could help removing unwanted signal which is inevitable during recording, or make the signal flow more stable. Thank you for reading this post and I will be really appreciate if you could post your feedback and help me improve!</p>
+<hr>
+<h2 id="Chapter-5-Configurating-EQ"><a href="#Chapter-5-Configurating-EQ" class="headerlink" title="Chapter 5: Configurating EQ"></a>Chapter 5: Configurating EQ</h2><p><img src="http://wenzhong.qiniudn.com/img/week5_project_overview.png" alt="project overview"></p>
+<p>In this lesson, I am going to demonstrate tunning the EQ of bass track. Let’s get started!</p>
+<h3 id="Panel-Introduction"><a href="#Panel-Introduction" class="headerlink" title="Panel Introduction"></a>Panel Introduction</h3><p>First of all, select the bass track and activate channel EQ panel by clicking the “Channel EQ” button in the bass track channel.<br><img src="http://wenzhong.qiniudn.com/img/blog/week5_EQ_panel.png" alt="activate EQ panel"></p>
+<p>In the panel, we can see:</p>
+<ul>
+<li>Top section<ul>
+<li>name of current settings </li>
+<li>compare button (switch to show pre EQ and post EQ effects settings)</li>
+</ul>
+</li>
+<li>Main section<ul>
+<li>on the left panel, master gain level</li>
+<li>on the right panel, there is EQ control switch at different frequency ranges. By default, the lowest and highest end are disabled. Right down the control switch is the EQ preview area. we could also drag the control point in the curve to set parameters. below the preview area, it’s the configuration panel where we accurately set the EQ parameters.</li>
+</ul>
+</li>
+</ul>
+<h3 id="Configuring-the-Bass-track"><a href="#Configuring-the-Bass-track" class="headerlink" title="Configuring the Bass track"></a>Configuring the Bass track</h3><p>Here’s what I going to configurate the EQ of Bass:</p>
+<ul>
+<li>Filter signals under 100 Hz &amp; start reduce signals over 520 Hz to put more focus on the bass range</li>
+<li>increase 6dB around 260 Hz (to make sound solid)</li>
+<li>increate 3dB around 730 Hz (to increase noise in strum)</li>
+</ul>
+<p>And here’s the final EQ effect after some other minor tunning by comparing the pre EQ and post EQ.</p>
+<p><img src="http://wenzhong.qiniudn.com/img/blog/week5_post_eq.png" alt="final EQ effects"><br>and you could also see the actual EQ curve thumbnail at the bass track channels on the left.</p>
+<h3 id="Save-as-a-pre-set"><a href="#Save-as-a-pre-set" class="headerlink" title="Save as a pre-set"></a>Save as a pre-set</h3><p>If this setting could be a general one, then we could click the name of setting to save these settings as “bass track EQ”, for example.  Or save it as a new default settings, so it could be reused next time<br><img src="http://wenzhong.qiniudn.com/img/blog/save_as_new_settings.png" alt="Save new settings"></p>
+<h3 id="Chapter-5-Reflection"><a href="#Chapter-5-Reflection" class="headerlink" title="Chapter 5 Reflection"></a>Chapter 5 Reflection</h3><p>In this lesson we have examined configurating the EQ of a track. It’s very helpful in music production. And it need 2 factors to make this configuration a good one in my opinion:</p>
+<ul>
+<li>Knowing the gear/instrument well. Understanding its basic working range is very helpful on the setting the outline configurations.</li>
+<li>Listen carefully with your ear and trust your instinct in minor configurations.</li>
+</ul>
+<hr>
+<h2 id="Chapter-6-Understanding-Synthesizer"><a href="#Chapter-6-Understanding-Synthesizer" class="headerlink" title="Chapter 6: Understanding Synthesizer"></a>Chapter 6: Understanding Synthesizer</h2><p>This note is for week 6 of Introduction To Music Production at Coursera.org. I will be teaching “Explain the usage of 5 most important synthesis module: Oscillator, Filter, Amplifier, Envelope and LFO”. </p>
+<p>A sound synthesizer (often abbreviated as “synthesizer” or “synth”) is an electronic musical instrument that generates electric signals which can be converted to sound through loudspeakers or headphones. Synthesizers may either imitate other instruments or generate new timbres. They can be played (controlled) via a variety of different input devices, including keyboards, music sequencers and instrument controllers. And here we will cover modules in a synthesizer.</p>
+<p>Definitions:</p>
+<ul>
+<li>Oscillator: A device capable of generating a periodic signal or waveform.</li>
+<li>Filter: A device capable of attenuating a signal at a set cutoff frequency.</li>
+<li>Amplifier: A device capable of boosting a signal amplitude.</li>
+<li>Envelope: The pattern generated from the attack, sustain, decay and release of a sound.</li>
+<li>Low Frequency Oscillator (LFO): A secondary oscillator device designed to produce signals whose frequency is at the bottom of, or below, the audio range.</li>
+</ul>
+<p>The Oscillator generates a basic wave (or tone) that is used throughout the synthesis process. Oscillators generate various waveforms: sine, triangle, square, and sawtooth. The sine wave is basically a waveform that is fundamental and has no overtones or partials. The square, triangle, and sawtooth waveforms are capable of producing rich harmonics (partials) to influence the timbre of sound. The oscillator function is to generate a sound for all the other modules in the synthesizer. </p>
+<p>After the Oscillator generates the signal it is passed to a filter to remove unwanted partials within a frequency spectrum. This process is called subtractive synthesis because the filter removes unwanted partials. Filters are classified as low pass, high pass and band pass filters. The filter will start functioning when the signal reaches the cutoff frequency. </p>
+<p>After filtering, the signal is passed to an amplifier. The amplifier function is to adjust the level or amplitude of the<br>signal. It also functions as a way to pan the signal from left to right. </p>
+<p>The envelope in conjunction with modulation is used to generate a pattern by manipulating the attack, sustain, decay and release of a sound. </p>
+<p>LFOs are used to control different parameters or characteristics of a sound in the filter and or amplifier, such as pitch, which many musicians use to explore incredible creativity.</p>
+<h3 id="Chapter-6-Reflection"><a href="#Chapter-6-Reflection" class="headerlink" title="Chapter 6 Reflection"></a>Chapter 6 Reflection</h3><p>Synthesis is a tool to boost our imagination and creativity when composing electronical music. We talk about the basic of syn but we should be awared that there are different types of systhesis for different instrument and timbre waiting for us to explore. I would suggest ES2 to start with and then select a syn that match one’s need to dive in. For example, UltraBeat for a drummer. </p>
+<p>I hope you find this post helpful for review purpose. Thank you for reading this post and I will be really appreciate if you could post your feedback and help me improve.</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://musicdiary.me/2014/07/22/Music-Production-Learning-Notes/" data-id="cjlkjvs12000vz0jguaccayse" class="article-share-link"><i class="fas fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fab fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fab fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fab fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fab fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2015/01/19/Einstein-Interview/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    爱因斯坦首演后台采访稿
+                
+            </div>
+        </a>
+    
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+
+</section>
+            
+                
+<aside id="sidebar">
+   
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">recent</h3>
+        <div class="widget">
+            <ul id="recent-post" class="no-thumbnail">
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Music/">Music</a><i class="fas fa-angle-right"></i><a class="article-category-link" href="/categories/Music/Music-Theory/">Music Theory</a></p>
+                            <p class="item-title"><a href="/2017/12/03/A-memo-of-Barre-Chords/" class="title">A memo of Barre Chords</a></p>
+                            <p class="item-date"><time datetime="2017-12-03T13:54:16.000Z" itemprop="datePublished">2017-12-03</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Music/">Music</a><i class="fas fa-angle-right"></i><a class="article-category-link" href="/categories/Music/Drums/">Drums</a></p>
+                            <p class="item-title"><a href="/2017/08/13/Drum-Practicing-Reflection/" class="title">Drum Practicing Reflection</a></p>
+                            <p class="item-date"><time datetime="2017-08-13T07:35:20.000Z" itemprop="datePublished">2017-08-13</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Music/">Music</a><i class="fas fa-angle-right"></i><a class="article-category-link" href="/categories/Music/Music-Theory/">Music Theory</a></p>
+                            <p class="item-title"><a href="/2017/04/18/Nice-Chord-Study-Notes-1-50/" class="title">Nice Chord Study Notes (1-50)</a></p>
+                            <p class="item-date"><time datetime="2017-04-18T13:13:40.000Z" itemprop="datePublished">2017-04-18</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Music/">Music</a><i class="fas fa-angle-right"></i><a class="article-category-link" href="/categories/Music/Music-Production/">Music Production</a></p>
+                            <p class="item-title"><a href="/2015/11/14/Zhihu-Salon-Memo/" class="title">2015-11-14 知乎盐沙龙活动随笔</a></p>
+                            <p class="item-date"><time datetime="2015-11-14T07:08:35.000Z" itemprop="datePublished">2015-11-14</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Music/">Music</a><i class="fas fa-angle-right"></i><a class="article-category-link" href="/categories/Music/Band/">Band</a></p>
+                            <p class="item-title"><a href="/2015/01/19/Einstein-Interview/" class="title">爱因斯坦首演后台采访稿</a></p>
+                            <p class="item-date"><time datetime="2015-01-18T17:17:10.000Z" itemprop="datePublished">2015-01-19</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Music/">Music</a><span class="category-list-count">6</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Music/Band/">Band</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Music/Drums/">Drums</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Music/Music-Production/">Music Production</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Music/Music-Theory/">Music Theory</a><span class="category-list-count">2</span></li></ul></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">July 2014</a><span class="archive-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chords/">Chords</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Coursera/">Coursera</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Drums/">Drums</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Logic-Pro/">Logic Pro</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Music/">Music</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Music-Production/">Music Production</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zhihu/">Zhihu</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Chords/" style="font-size: 10px;">Chords</a> <a href="/tags/Coursera/" style="font-size: 10px;">Coursera</a> <a href="/tags/Drums/" style="font-size: 10px;">Drums</a> <a href="/tags/Logic-Pro/" style="font-size: 10px;">Logic Pro</a> <a href="/tags/Music/" style="font-size: 20px;">Music</a> <a href="/tags/Music-Production/" style="font-size: 10px;">Music Production</a> <a href="/tags/Zhihu/" style="font-size: 10px;">Zhihu</a>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div id="toTop" class="fas fa-angle-up"></div>
+</aside>
+
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 Wenzhong<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+        </div>
+    </div>
+</footer>
+        
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
